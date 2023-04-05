@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Classes",
+    "\\Constants",
+    "\\Handlers",
+    "\\Handlers\\Mixer",
+    "\\Handlers\\Playlist",
+    "\\Handlers\\ScriptEvents"
+  ],
+  "SelectedNode": "\\Handlers\\Mixer\\HandleMixer.py",
+  "PreviewInSolutionExplorer": false
+}

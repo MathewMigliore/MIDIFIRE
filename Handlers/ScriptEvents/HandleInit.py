@@ -1,16 +1,16 @@
 from Utility.Utils import *
-from Utility.Display import InitDisplay
-from Handlers.Mixer.HandleMixer import MixerPadsInit
+from Utility.Display import init_display
+from Handlers.Mixer.HandleMixer import mixer_pads_init
 from Constants.System import *
 from Constants.Colour import *
-def HandleInit():
+def handle_init():
     print("INIT")
-    SendCC(IDPatternUp, SingleColourOff)
-    SendCC(IDPatternDown, SingleColourOff)
-    SendCC(IDBankL, SingleColourOff)
-    SendCC(IDBankR, SingleColourOff)
-    SendCC(IDBrowser, SingleColourOff)
-    ClearAllPads()
-    ClearSelectButtons()
-    MixerPadsInit()
-    InitDisplay()
+    send_cc(IDPatternUp, SingleColourOff)
+    send_cc(IDPatternDown, SingleColourOff)
+    send_cc(IDBankL, SingleColourOff)
+    send_cc(IDBankR, SingleColourOff)
+    send_cc(IDBrowser, SingleColourOff)
+    clear_all_pads()
+    clear_select_buttons()
+    mixer_pads_init()
+    init_display()

@@ -4,20 +4,20 @@ from Utility.Colours import SetPadColour
 
 import device
 
-def SendCC(ID, Val):
+def send_cc(ID, Val):
     if (not device.isAssigned()):
         return
     device.midiOutNewMsg(MIDI_CONTROLCHANGE + (ID << 8) + (Val << 16), ID)
 
-def ClearAllPads():
+def clear_all_pads():
     for pad in range(0,64):
         SetPadColour(pad, 0x000000, 0)
 
-def ClearSelectButtons():
+def clear_select_buttons():
     for tab in TabControls:
-        SendCC(tab, SingleColourHalfBright)
+        send_cc(tab, SingleColourHalfBright)
     for led in FullScreenLED:
-        SendCC(led, SingleColourOff)
+        send_cc(led, SingleColourOff)
 
 
 

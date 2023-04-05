@@ -10,9 +10,9 @@ class PianorollState(object):
         self.mixerEndSelection = mixerEndSelection
         self.mixerBeginSelectionStored = mixerBeginSelectionStored
 
-def HandelPianoroll(event):
+def handle_piano_roll(event):
     ctrlID = event.data1
     evnt = event.data2
 
-def PianorollPadsInit():
+def piano_roll_pads_init():
     print()

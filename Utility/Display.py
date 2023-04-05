@@ -31,13 +31,13 @@ def DisplayTimedText(Text):
     screen.displayTimedText(Text, 2)
     screen.update()
 
-def InitDisplay():
+def init_display():
     screen.init(DisplayWidth, DisplayHeight, TextRowHeight, FireFontSize, 0xFFFFFF, 0)
     sysexHeader = int.from_bytes(bytes([MIDI_BEGINSYSEX, ManufacturerIDConst, DeviceIDBroadCastConst ,ProductIDConst, MsgIDSendPackedOLEDData]), byteorder='little')
     screen.setup(sysexHeader, ScreenActiveTimeout, ScreenAutoTimeout, TextScrollPause, TextScrollSpeed, TextDisplayTime)
     screen.fillRect(0, 0, DisplayWidth, DisplayHeight, 0)
 
-def DeInitDisplay():
+def deinit_Display():
     DisplayTextTop(' ')
     DisplayTextMiddle(' ')
     DisplayTextBottom(' ')

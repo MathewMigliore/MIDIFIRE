@@ -1,6 +1,6 @@
-def HandleDeInit():
-    ClearAllPads()
+def handle_deinit():
+    clear_all_pads()
     ClearDisplay()
-    SendCC(IDKnobModeLEDArray, 16)
+    send_cc(IDKnobModeLEDArray, 16)
     for ctrlID in getNonPadLightCtrls():
         SendCC(ctrlID, 0)

@@ -11,9 +11,9 @@ class ChannelrackState(object):
         self.mixerBeginSelectionStored = mixerBeginSelectionStored
 
 
-def HandelChannelrack(event):
+def handle_channel_rack(event):
     ctrlID = event.data1
     evnt = event.data2
 
-def ChannelrackPadsInit():
+def channel_rack_pads_init():
     print()

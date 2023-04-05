@@ -10,9 +10,9 @@ class PlaylistState(object):
         self.mixerEndSelection = mixerEndSelection
         self.mixerBeginSelectionStored = mixerBeginSelectionStored
 
-def HandelPlaylist(event):
+def handle_playlist(event):
     ctrlID = event.data1
     evnt = event.data2
 
-def PlaylistPadsInit():
+def playlist_pads_init():
     print()
